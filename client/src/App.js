@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import SocketMessage from './Socket'
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -32,6 +34,7 @@ class App extends React.Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">{this.state.response}</p>
+        <SocketMessage />
       </div>
     );
   }
