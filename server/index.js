@@ -1,14 +1,10 @@
 const express = require('express');
-
 const app = express();
 const port = process.env.PORT || 5000;
 var noble = require('noble');
 
 noble.on('stateChange', function(state) {
   if (state === 'poweredOn') {
-    // Seek for peripherals broadcasting the heart rate service
-    // This will pick up a Polar H7 and should pick up other ble heart rate bands
-    // Will use whichever the first one discovered is if more than one are in range
     noble.startScanning(["180d"]);
   } else {
     noble.stopScanning();
