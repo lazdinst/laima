@@ -14,3 +14,6 @@ The actual BPM data is stored in the 2nd bit in data (at array index 1)
 
 ## Helpful Links
 https://www.bluetooth.com/specifications/assigned-numbers/health-device-profile
+https://bl.ocks.org/velickym/d19f76572243c774557f
+http://developers.overwolf.com/documentation/sdk/overwolf/
+http://developers.overwolf.com/documentation/odk-2-0-introduction/creating-your-first-app/
