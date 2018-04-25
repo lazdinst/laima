@@ -29,11 +29,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
+      <div>
+        <header>
+          <h1>Header</h1>
         </header>
-        <p className="App-intro">{this.state.response}</p>
+        <p>{this.state.response}</p>
         <SocketMessage />
       </div>
     );

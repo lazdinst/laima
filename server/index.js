@@ -19,7 +19,7 @@ app.get('/api/hello', (req, res) => {
 // This is what the socket.io syntax is like, we will work this later
 io.on('connection', socket => {
   console.log('User connected')
-  
+  io.sockets.emit('pong', 'pong')
   socket.on('ping', () => {
     io.sockets.emit('pong', 'pong')
     console.log('Pong')
